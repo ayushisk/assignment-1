@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --main-color: rgb(107, 70, 70);
+    --bg-color: #172937;
+    --bg-upper: #253644;
+    --f-color: white;
+    --f-span: rgb(107, 70, 70);
+    --fs-a: 1.8rem;
+    --fs-b: 14px;
+    --fs-c: 1.3rem;
+    --fs-d: 12px;
+    --fs-e: 1.5rem;
+    --fs-f: 15px;
+
+
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+body {
+    background-color: var(--bg-color);
+    padding-left: 1rem;
+
+}
+
+.sidebar {
+    box-sizing: border-box;
+    border-radius: 30px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    background-color: var(--bg-upper);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 50px 20px;
+    width: 15rem;
+}
+
+.sidebar .info a {
+    font-size: var(--fs-a);
+    text-transform: uppercase;
+    color: var(--f-color);
+    font-weight: bolder;
+    padding-top: 0px;
+}
+
+.sidebar .info span {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.contact a {
+    display: block;
+    font-size: var(--fs-b);
+    color: var(--f-color);
+    margin: 2rem 0;
+
+}
+
+.contact a:hover {
+    color: var(--main-color);
+}
+
+.social a {
+
+    font-size: var(--fs-c);
+    color: var(--f-color);
+    margin: 0 .7rem;
+}
+
+.social a:hover {
+    color: var(--main-color);
+}
+
+.info .pbox {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #172937;
+    border-radius: 15px;
+}
+
+.info .pbox p {
+    color: var(--f-color);
+    font-size: var(--fs-d);
+}
+
+article {
+    height: 1000px;
+    margin-left: 280px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin-right: 30px;
+    background-color: var(--bg-upper);
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+header {
+    color: var(--f-color);
+    padding: 20px 20px;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 6px;
+    text-underline-offset: .25em;
+}
+
+.about-info{
+    background-color: var(--bg-color);
+    padding: 20px 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+.about-info p {
+    color: var(--f-color);
+    font-size: var(--fs-d);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.project h3 {
+    display: block;
+    color: var(--f-color);
+    font-size: var(--fs-e);
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.projectname {
+    color: var(--f-color);
+    font-size: var(--fs-e);
+    font-weight: bolder;
+    padding: 20px 20px;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 6px;
+    text-underline-offset: .25em;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .content-1 {
+    background-color: var(--bg-color);
+    color: var(--f-color);
+    font-size: var(--fs-d);
+    padding: 50px 20px;
+
+    margin: 20px 20px;
+    border-radius: 20px;
+}
+
+.content-1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content-1 p {
+    margin-top: 30px;
+}
+
+.project .content-2 {
+    background-color: var(--bg-color);
+    color: var(--f-color);
+    font-size: var(--fs-d);
+    padding: 50px 20px;
+    margin: 20px 20px;
+    border-radius: 20px;
+
+}
+
+.content-2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content-2 p {
+    margin-top: 30px;
+}
+
+.project .content-3 {
+    background-color: var(--bg-color);
+    color: var(--f-color);
+    font-size: var(--fs-d);
+    padding: 50px 20px;
+    margin: 20px 20px;
+
+    border-radius: 20px;
+}
+
+.content-3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content-3 p {
+    margin-top: 30px;
+}
+
+.achievements h3{
+    display: block;
+    color: var(--f-color);
+    font-size: var(--fs-e);
+    padding: 20px 20px;
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 6px;
+    text-underline-offset: .25em;
+}
+
+.achievements ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.content-A{
+    background-color: var(--bg-color);
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.content-B{
+    background-color: var(--bg-color);
+    height: 300px;
+    width: 350px;
+    border-radius: 20px;
+
+}
+
+
+.content-A h4{
+    font-size: var(--fs-c);
+    color: var(--f-color);
+    padding-left: 20px;
+
+}
+
+.content-B h4{
+    font-size: var(--fs-c);
+    color: var(--f-color);
+    padding-left: 20px;
+}
+
+
+.content-A a img{
+    padding-left: 60px;
+    padding-top: 40px;
+    width: 270px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-B a img{
+    padding-left: 70px;
+    padding-top: 40px;
+    width: 270px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* --------------------------------------------------- */
+
+@media (max-width: 1024px){
+    .sidebar {
+        position: relative;
+        width: 950px;
+        height: 140px;
+        padding: 20px 20px;
+        margin-right: 50px;
+    }
+    .info-more{
+        display: none;
+    } 
+    article{
+        margin-left: 20px;
+        padding: 20px 20px;
+        width: 950px;
+        height: 1200px;
+        margin-top: 50px; 
+        margin-right: 50px;   
+    }
+}
+
+@media (max-width: 768px){
+    .sidebar, article{
+        width: 700px;
+    }
+    .content-A{
+        position: unset;
+        height: 250px;
+        width: 200px;
+    }
+    .content-B{
+        position: unset;
+        height: 250px;
+        width: 200px;
+    }
+    .achievements h4{
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .content-A a img{
+        width: 200px;
+        padding: 20px 20px;
+    }
+    .content-B a img{
+        width: 200px;
+        padding: 20px 20px;
+    }
+
+}
+
+@media (max-width: 540px){
+    /* .sidebar, article{
+        width: 520px;
+        padding: 30px;
+    }
+    .sidebar{
+        max-height: 180px;
+        margin-bottom: 30px;
+    }
+    .main-content header{
+        margin-bottom: 20px;
+    } */
+}
