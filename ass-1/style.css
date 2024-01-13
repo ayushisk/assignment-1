@@ -42,6 +42,7 @@ body {
     top: 20px;
     left: 20px;
     bottom: 20px;
+    right: 20px;
     background-color: var(--bg-upper);
     display: flex;
     align-items: center;
@@ -300,8 +301,15 @@ header {
 /* --------------------------------------------------- */
 
 @media (max-width: 1024px){
+    body {
+        padding: unset;
+        margin: unset;
+    }
+
     .sidebar {
         position: relative;
+        display: flex;
+        align-items: flex-start;
         width: 950px;
         height: 140px;
         padding: 20px 20px;
@@ -321,9 +329,30 @@ header {
 }
 
 @media (max-width: 768px){
+    body {
+        padding: unset;
+        margin: unset;
+    }
     .sidebar, article{
         width: 700px;
+        padding: 20px 20px;
+        margin: 20px 20px;
+
     }
+    .sidebar{
+        display: flex;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 20px;
+        padding-right: 20px;
+    }
+    article{
+        margin-left: 20px;
+        padding: 20px 20px;
+        margin-top: 50px; 
+        margin-right: 50px;   
+    }
+
     .content-A{
         position: unset;
         height: 250px;
@@ -350,15 +379,25 @@ header {
 }
 
 @media (max-width: 540px){
-    /* .sidebar, article{
-        width: 520px;
-        padding: 30px;
+    body {
+        padding: unset;
+        margin: unset;
     }
-    .sidebar{
-        max-height: 180px;
-        margin-bottom: 30px;
+    .sidebar, article{
+        padding: 20px 20px;
+        margin: 20px 20px;
     }
-    .main-content header{
-        margin-bottom: 20px;
-    } */
+    .sidebar {
+        position: relative;
+        align-items: flex-start;
+        display: flex;
+        width: 700px;
+        margin-left: 0;
+    }
+    article{
+        margin-left: 20px;
+        padding: 20px 20px;
+        margin-top: 50px; 
+        margin-right: 50px;   
+    }
 }
